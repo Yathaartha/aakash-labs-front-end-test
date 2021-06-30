@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from "react";
 
 class CurrencySingle extends Component {
+  // gets exchange rate for specified crypto currency
   getExchangeRate = (ticker) => {
     let rateFound = "not found";
     this.props.exchangeRates.data.forEach((rate) => {
@@ -11,6 +12,7 @@ class CurrencySingle extends Component {
     return <div>{rateFound}</div>;
   };
 
+  // renders currency details in list form
   renderList = (currency, index) => {
     return (
       <ul>
@@ -21,6 +23,7 @@ class CurrencySingle extends Component {
         <li>
           <img src={currency.logo} alt={currency.name} />
         </li>
+        {/* gets exchangerate for that currency */}
         <li>{this.getExchangeRate(currency.ticker)}</li>
       </ul>
     );

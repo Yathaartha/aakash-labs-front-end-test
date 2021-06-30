@@ -28,6 +28,7 @@ body {
   align-items: center;
 }
 
+// content
 .content-container {
   width: 100%;
   display: flex;
@@ -57,20 +58,6 @@ body {
           height: 30px;
         }
       }
-
-      &:last-child {
-        li {
-          // border-bottom: none;
-
-          &:first-child {
-            // border-left: none;
-          }
-
-          &:last-child {
-            // border-right: none;
-          }
-        }
-      }
     }
 
     .list-header {
@@ -78,15 +65,7 @@ body {
       color: #fff;
       li {
         font-size: 1.2rem;
-        // border-top: none;
         font-weight: 600;
-        &:first-child {
-          // border-left: none;
-        }
-
-        &:last-child {
-          // border-right: none;
-        }
       }
     }
   }
