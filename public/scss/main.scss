@@ -11,7 +11,8 @@ body {
 }
 
 .header {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
   width: 100%;
   height: 80px;
   display: flex;
@@ -49,6 +50,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
 
         &:first-child {
           max-width: 4rem;
